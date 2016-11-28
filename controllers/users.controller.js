@@ -1,7 +1,7 @@
 var c = require('../db-connection');
 
 exports.loginUser=(req, res)=>{
-	c.query('SELECT username, password FROM user WHERE username = ?', [req.body.username], function(err, rows){
+	c.query('SELECT username, password FROM USER WHERE username = ?', [req.body.username], function(err, rows){
 		if (err) throw err;
 		if (rows[0] && rows[0].password === req.body.password){
 			req.session.username = req.body.username;

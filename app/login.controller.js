@@ -16,7 +16,8 @@
 				username: vm.username,
 				password: vm.password
 			}
-			$http.post('/login', credentials)
+			$http
+				.post('/login', credentials)
 				.then(function (response){
 					var redirect = response.data.redirect;
 					console.log(redirect);
