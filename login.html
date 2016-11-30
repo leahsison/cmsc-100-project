@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pegaraw</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">	
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script src="bower_components/semantic/dist/semantic.min.js"></script>	
+	<style>
+		#nav-wrapper{
+			background-color: white;
+			position: fixed;
+		    height: 60px;
+		    top: 0;
+		    width: 100%;
+		    z-index: 100		
+		}
+		#kwekpic{
+			height: 50px;
+			width: 50px;
+			border-radius: 5px;
+			margin: 5px;
+
+		}
+		#login_card{
+			background-color: #f2c39b;
+
+		}
+		#user_now{
+			width: 300px;
+			margin: 5px;
+		}
+		#pass_now{
+			width: 220px;
+			margin: 5px;
+		}
+		#login_button{
+			margin-bottom: 10px; 
+			margin-right: 15px;
+		}
+		#user_sign{
+			width: 300px;
+			margin: 5px;
+		}
+		#pass_sign{
+			width: 220px;
+			margin: 5px;
+		}
+		#email_sign{
+			width: 300px;
+			margin: 5px;
+		}
+		nav{
+			 margin-top: 55px;
+		}
+		body{
+			background-image:url(pegaraw.png);
+		}
+
+	</style>
+</head>
+<body background="pegaraw.png">
+	<nav class="ui sticky">
+		<div class="ui attached borderless stackable secondary pointing menu" id="nav-wrapper">
+			<div class="ui container" id="menu">
+				<a class="active item"><i class="home icon"></i> Home</a>
+				<a class="item"><i class="grid layout icon"></i> About</a>
+				<div class="right item">
+					<div class="ui category search" id="searchbar" class="item">
+						<div class="ui icon input">
+							<input class="prompt" type="text" placeholder="Search elbi">
+							<i class="search icon"></i>
+						</div>
+						<div class="results">insert result</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="ui hidden divider"></div>
+	<div class="ui two column center doubling stackable relaxed grid container">
+			<div class=" fluid ten wide column">
+				<div class="ui sizer vertical segment">
+					<div class="ui huge header">Welcome to Pegaraw!</div>
+					<h3>Connect with your friends - and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.</h3>				
+				</div>
+			</div>
+			<div class=" fluid six wide column">
+				<div class="ui fluid card" id="login_card">
+					<div class="row"><h1 class="ui center aligned block header">Login Here</h1></div>
+					<div class="row">
+						<div class="ui input"><input type="text" placeholder="Username" id="user_now"></div>
+					</div>
+					<div class="row">
+						<div class="ui input"><input type="text" placeholder="Password" id="pass_now">
+						<div class="row">
+							<div class="ui orange animated button right floated" tabindex="0" style="margin-bottom: 10px; margin-right: 15px;">
+								<div class="visible content">Login</div>
+								<div class="hidden content">
+									<i class="map pin icon"></i>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					
+				</div>
+			   	<div class="ui fluid card" id="signup_card">
+			   		<div class="row"><h1 class="ui center aligned block header">Join us now!</h1></div>
+					<div class="row">
+						<div class="ui input"><input type="text" placeholder="Username?" id="user_sign"></div>
+					</div>
+					<div class="row">
+						<div class="ui input"><input type="email" placeholder="Email Address?" id="email_sign"></div>
+					</div>
+					<div class="row">
+						<div class="ui input"><input type="text" placeholder="Password" id="pass_sign">
+						<div class="row">
+							<div class="ui orange animated button right floated" tabindex="0" style="margin-bottom: 10px; margin-right: 15px;">
+								<div class="visible content">Signup</div>
+								<div class="hidden content">
+									<i class="map pin icon"></i>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>
