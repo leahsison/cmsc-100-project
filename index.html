@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pegaraw</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+	
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script src="bower_components/semantic/dist/semantic.min.js"></script>	
+	<style>
+		#logo{
+			margin-top: 0px;
+		}
+		.ProfPic{
+			height: 50px;
+			width: 50px;
+			border-radius: 5px;
+			margin: 5px;
+		}
+		#kwek_card{
+			background-color: #f2c39b;
+
+		}
+		#kwek_now{
+			width: 675px;
+			margin: 5px;
+		}
+		#kwekpic{
+			height: 50px;
+			width: 50px;
+			border-radius: 5px;
+			margin: 5px;
+			
+		}
+		#userLine{
+			height: 10px;
+			width: 10px;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		#kwek_now_container{
+			margin: 5px;
+		}
+		body{
+			background-color: #f2f2f2;
+		}
+		nav{
+			background-color: white;
+		}
+	</style>
+	<script>
+		$('.ui.sticky')
+		  .sticky({
+		    context: '#example1'
+		  })
+		;
+	</script>
+</head>
+<body>
+	<nav class="ui sticky">
+		<div class="ui attached borderless stackable secondary pointing menu">
+			<div class="ui container" id="menu">
+				<a class="active item"><i class="home icon"></i> Home</a>
+				<a class="item"><i class="grid layout icon"></i> Notification</a>
+				<a class="item"><i class="mail icon"></i> Messages</a>
+				<div class="right item" id="logo">
+					<a href="index.html"><i><img src="favicon.ico"></i></a>
+				</div>
+				<div class="right item">
+					<div class="ui category search" id="searchbar" class="item">
+						<div class="ui icon input">
+							<input class="prompt" type="text" placeholder="Search elbi">
+							<i class="search icon"></i>
+						</div>
+						<div class="results">insert result</div>
+					</div>
+				</div>
+				<div class="ui simple dropdown item"><img id="userLink" src="pegaraw.png"> Me<i class="dropdown icon"></i>
+					<div class="menu">
+						<a class="item"><i class="edit icon"></i> Edit Profile</a>
+						<a class="item"><i class="globe icon"></i> Choose Language</a>
+						<a class="item"><i class="settings icon"></i> Account Settings</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+		<div class="ui hidden divider"></div>
+		<div class="ui two column center doubling stackable relaxed grid container" id="feed" id="example1">
+			<div class=" fluid five wide column">
+				<div class="ui card">
+					<div class="image" style="	">
+				    	<img src="pegaraw.png">
+				  </div>
+				  <div class="content">
+				    <a class="header"><img class="ProfPic" src="pegaraw.png">Username</a>
+				    <div class="meta">
+				      <span class="	name">@username</span>
+				    </div>
+				    <div class="ui three column center doubling stackable grid container" id="basic_info">
+						<div class="column"><a class="item"> Kweks <br> 45 </a></div>
+						<div class="column"><a class="item"> Following <br> 45</a></div>
+						<div class="column"><a class="item"> Follwers <br> 45</a></div>
+				  	</div>
+				</div>	
+				</div>	
+			</div>
+			<div class=" fluid eleven wide column">
+				<div class="ui fluid card" id="kwek_card">
+					<div class="row">
+						<div class="ui input" id="kwek_now_container"><img id="kwekpic" src="pegaraw.png"><input type="text" placeholder="What's Kwekening?" id="kwek_now"></div>
+					</div>
+					<div class="row">
+						<div class="ui orange animated button right floated" tabindex="0" style="margin-bottom: 10px; margin-right: 15px;">
+							<div class="visible content">Kwek!</div>
+							<div class="hidden content">
+								<i class="map pin icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			   	<div class="ui fluid card">
+				  <div class="content">
+				    <i class="right floated like icon"></i>
+				    <i class="right floated star icon"></i>
+				    <i class="right floated reply icon"></i>
+				    <div class="header"><img class="ProfPic" src="pegaraw.png">Cute Dog</div>
+				    <div class="description">
+				      <p>kwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwek</p>
+				    </div>
+				  </div>
+				  <div class="extra content">
+				    <span class="left floated like">
+				      <i class="like icon"></i>
+				      Tuhog
+				    </span>
+				    <span class="left floated star">
+				      <i class="star icon"></i>
+				      Favorite
+				    </span>
+				    <span class="left floated star">
+				    	<i class="reply icon"></i>
+				    	Rekwek
+				    </span>
+				  </div>
+				</div>
+				<div class="ui fluid card">
+				  <div class="content">
+				    <i class="right floated like icon"></i>
+				    <i class="right floated star icon"></i>
+				    <i class="right floated reply icon"></i>
+				     <div class="header"><img class="ProfPic" src="pegaraw.png">Cute Dog</div>
+				    <div class="description">
+				      <p>kwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwek</p>
+				    </div>
+				  </div>
+				  <div class="extra content">
+				    <span class="left floated like">
+				      <i class="like icon"></i>
+				      Tuhog
+				    </span>
+				    <span class="left floated star">
+				      <i class="star icon"></i>
+				      Favorite
+				    </span>
+				    <span class="left floated star">
+				    	<i class="reply icon"></i>
+				    	Rekwek
+				    </span>
+				  </div>
+				</div>
+				<div class="ui fluid card">
+				  <div class="content">
+				    <i class="right floated like icon"></i>
+				    <i class="right floated star icon"></i>
+				    <i class="right floated reply icon"></i>
+				     <div class="header"><img class="ProfPic" src="pegaraw.png">Cute Dog</div>
+				    <div class="description">
+				      <p>kwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwek</p>
+				    </div>
+				  </div>
+				  <div class="extra content">
+				    <span class="left floated like">
+				      <i class="like icon"></i>
+				      Tuhog
+				    </span>
+				    <span class="left floated star">
+				      <i class="star icon"></i>
+				      Favorite
+				    </span>
+				    <span class="left floated star">
+				    	<i class="reply icon"></i>
+				    	Rekwek
+				    </span>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+
+</body>
+</html>
