@@ -1,4 +1,5 @@
 const userController =require('../controllers/users.controller');
+const tweetController =require('../controllers/tweets.controller');
 const express = require('express');
 const router = express.Router();
 
@@ -21,6 +22,8 @@ router.use(function(req, res, next){
 		res.redirect('/login');
 	}
 })
+
+router.get('/tweets', tweetController.getTweets);
 
 router.get('/', (req,res)=>{
 	res.sendFile('views/index.html',{root:__dirname+'/..'});
