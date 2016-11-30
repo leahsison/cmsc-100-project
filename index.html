@@ -29,7 +29,7 @@
 			width: 50px;
 			border-radius: 5px;
 			margin: 5px;
-			
+
 		}
 		#userLine{
 			height: 10px;
@@ -43,8 +43,16 @@
 		body{
 			background-color: #f2f2f2;
 		}
-		nav{
+		#nav-wrapper{
 			background-color: white;
+			position: fixed;
+		    height: 60px;
+		    top: 0;
+		    width: 100%;
+		    z-index: 100		
+		}
+		nav{
+			 margin-top: 55px;
 		}
 	</style>
 	<script>
@@ -57,7 +65,7 @@
 </head>
 <body>
 	<nav class="ui sticky">
-		<div class="ui attached borderless stackable secondary pointing menu">
+		<div class="ui attached borderless stackable secondary pointing menu" id="nav-wrapper">
 			<div class="ui container" id="menu">
 				<a class="active item"><i class="home icon"></i> Home</a>
 				<a class="item"><i class="grid layout icon"></i> Notification</a>
@@ -86,7 +94,7 @@
 	</nav>
 		<div class="ui hidden divider"></div>
 		<div class="ui two column center doubling stackable relaxed grid container" id="feed" id="example1">
-			<div class=" fluid five wide column">
+			<div class=" fluid four wide column">
 				<div class="ui card">
 					<div class="image" style="	">
 				    	<img src="pegaraw.png">
