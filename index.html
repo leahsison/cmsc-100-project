@@ -40,6 +40,9 @@
 		#kwek_now_container{
 			margin: 5px;
 		}
+		.ui.card{
+			margin:0;
+		}
 		body{
 			background-color: #f2f2f2;
 		}
@@ -67,7 +70,7 @@
 	<nav class="ui sticky">
 		<div class="ui attached borderless stackable secondary pointing menu" id="nav-wrapper">
 			<div class="ui container" id="menu">
-				<a class="active item"><i class="home icon"></i> Home</a>
+				<a class="active item" href="index.html"><i class="home icon"></i> Home</a>
 				<a class="item"><i class="grid layout icon"></i> Notification</a>
 				<a class="item"><i class="mail icon"></i> Messages</a>
 				<div class="right item" id="logo">
@@ -82,9 +85,9 @@
 						<div class="results">insert result</div>
 					</div>
 				</div>
-				<div class="ui simple dropdown item"><img id="userLink" src="pegaraw.png"> Me<i class="dropdown icon"></i>
+				<div class="ui simple dropdown item"><img id="userLink" src="pegaraw.png"><i class="dropdown icon"></i>
 					<div class="menu">
-						<a class="item"><i class="edit icon"></i> Edit Profile</a>
+						<a class="item" href="profile.html"><i class="edit icon"></i> Edit Profile</a>
 						<a class="item"><i class="globe icon"></i> Choose Language</a>
 						<a class="item"><i class="settings icon"></i> Account Settings</a>
 					</div>
@@ -101,9 +104,9 @@
 				  </div>
 				  <div class="content">
 				    <a class="header"><img class="ProfPic" src="pegaraw.png">Username</a>
-				    <div class="meta">
-				      <span class="	name">@username</span>
-				    </div>
+				    
+				      <a class-="header" href="#">@username</a>
+				    
 				    <div class="ui three column center doubling stackable grid container" id="basic_info">
 						<div class="column"><a class="item"> Kweks <br> 45 </a></div>
 						<div class="column"><a class="item"> Following <br> 45</a></div>
@@ -128,24 +131,38 @@
 				</div>
 			   	<div class="ui fluid card">
 				  <div class="content">
-				    <i class="right floated like icon"></i>
-				    <i class="right floated star icon"></i>
-				    <i class="right floated reply icon"></i>
-				    <div class="header"><img class="ProfPic" src="pegaraw.png">Cute Dog</div>
+				    <div class="header"><img class="ProfPic" src="pegaraw.png"><a href="#">Cute Dog</a> <div class="right floated meta">14h</div></div>
 				    <div class="description">
 				      <p>kwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwek</p>
 				    </div>
 				  </div>
 				  <div class="extra content">
-				    <span class="left floated like">
-				      <i class="like icon"></i>
+				    <span class="ui right floated like inverted red button">
+				      	<div class="left floated meta">3</div>
+				      	<i class="like icon"></i>				      
 				      Tuhog
 				    </span>
-				    <span class="left floated star">
-				      <i class="star icon"></i>
-				      Favorite
+				    <span class="ui right floated reply inverted green button">
+				    	<i class="reply icon"></i>
+				    	Rekwek
 				    </span>
-				    <span class="left floated star">
+				  </div>
+				  
+				</div>
+				<div class="ui fluid card">
+				  <div class="content">
+				    <div class="header"><img class="ProfPic" src="pegaraw.png"><a href="#">Cute Dog</a> <div class="right floated meta">14h</div></div>
+				    <div class="description">
+				      <p>kwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwek</p>
+				    </div>
+				  </div>
+				  <div class="extra content">
+				    <span class="ui right floated like inverted red button">
+				      	<div class="left floated meta">3</div>
+				      	<i class="like icon"></i>				      
+				      Tuhog
+				    </span>
+				    <span class="ui right floated reply inverted green button">
 				    	<i class="reply icon"></i>
 				    	Rekwek
 				    </span>
@@ -153,49 +170,18 @@
 				</div>
 				<div class="ui fluid card">
 				  <div class="content">
-				    <i class="right floated like icon"></i>
-				    <i class="right floated star icon"></i>
-				    <i class="right floated reply icon"></i>
-				     <div class="header"><img class="ProfPic" src="pegaraw.png">Cute Dog</div>
+				    <div class="header"><img class="ProfPic" src="pegaraw.png"><a href="#">Cute Dog</a> <div class="right floated meta">14h</div></div>
 				    <div class="description">
 				      <p>kwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwek</p>
 				    </div>
 				  </div>
 				  <div class="extra content">
-				    <span class="left floated like">
-				      <i class="like icon"></i>
+				    <span class="ui right floated like inverted red button">
+				      	<div class="left floated meta">3</div>
+				      	<i class="like icon"></i>				      
 				      Tuhog
 				    </span>
-				    <span class="left floated star">
-				      <i class="star icon"></i>
-				      Favorite
-				    </span>
-				    <span class="left floated star">
-				    	<i class="reply icon"></i>
-				    	Rekwek
-				    </span>
-				  </div>
-				</div>
-				<div class="ui fluid card">
-				  <div class="content">
-				    <i class="right floated like icon"></i>
-				    <i class="right floated star icon"></i>
-				    <i class="right floated reply icon"></i>
-				     <div class="header"><img class="ProfPic" src="pegaraw.png">Cute Dog</div>
-				    <div class="description">
-				      <p>kwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwekkwek</p>
-				    </div>
-				  </div>
-				  <div class="extra content">
-				    <span class="left floated like">
-				      <i class="like icon"></i>
-				      Tuhog
-				    </span>
-				    <span class="left floated star">
-				      <i class="star icon"></i>
-				      Favorite
-				    </span>
-				    <span class="left floated star">
+				    <span class="ui right floated reply inverted green button">
 				    	<i class="reply icon"></i>
 				    	Rekwek
 				    </span>
